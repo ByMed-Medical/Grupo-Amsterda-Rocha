@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão Digital - Barbearia Amsterdã Rochaê</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tab-content { display: none; }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-50 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden">
+
+        <!-- Cabeçalho -->
+        <div class="bg-gradient-to-r from-gray-500 to-gray-900 text-white p-8 text-center">
+            <img src="https://i.ibb.co/jP7wGt91/logo.png"
+                 alt="DLP Karaokê"
+                 class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-xl object-cover">
+            <h1 class="text-2xl font-bold mt-4"> Barbearia Amsterdã Rocha</h1>
+            <p class="text-gray-100 font-medium">Serviço de Festas e Entretenimento</p>
+            <p class="text-sm mt-2 font-semibold">Maceió - Alagoas</p>
+        </div>
+
+        <!-- Abas clicáveis -->
+        <div class="flex border-b bg-white overflow-x-auto">
+            <button onclick="abrirAba(0)" id="btn-0"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-700 border-b-2 border-gray-700">Perfil</button>
+            <button onclick="abrirAba(1)" id="btn-1"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Serviços</button>
+            <button onclick="abrirAba(2)" id="btn-2"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Unidades</button>
+            <button onclick="abrirAba(3)" id="btn-3"
+                    class="flex-1 py-4 px-2 text-sm font-semibold text-gray-600">Contato</button>
+        </div>
+
+        <!-- Conteúdo -->
+        <div class="p-6 min-h-[380px]">
+
+            <!-- Aba Perfil -->
+            <div id="aba-0" class="tab-content block">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Nós
+				</p>
+				<p class="text-gray-700 leading-relaxed mb-6">	
+                    Nossa missão
+				</p>
+				<p class="text-gray-700 leading-relaxed mb-6">	
+					Amsterdã Rocha
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-center">
+                    <div class="bg-gray-200 p-4 rounded-2xl">
+                        <p class="text-3xl">🪒</p>
+                        <p class="text-xs text-gray-600 mt-2 font-medium">Equipe treinada e qualificaada para seu bem estar</p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-2xl">
+                        <p class="text-3xl">💇‍♂️</p>
+                        <p class="text-xs text-gray-600 mt-2 font-medium">Profissionalismo e o carinho em cada detalhe</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aba Serviços -->
+            <div id="aba-1" class="tab-content">
+                <h3 class="font-bold text-lg mb-4 text-orange-800"></h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="font-bold text-lg mb-4 text-indigo-800"> Cabelo </li> <li class="flex items-start gap-3"> </li>
+                    <li class="font-bold text-lg mb-4 text-indigo-800"> Barba </li> <li class="flex items-start gap-3"> </li>
+                    <li class="font-bold text-lg mb-4 text-indigo-800"> Terapia </li> <li class="flex items-start gap-3"> </li>
+                    <li class="font-bold text-lg mb-4 text-indigo-800"> Tratamentos </li> <li class="flex items-start gap-3"> </li>
+					<li class="font-bold text-lg mb-4 text-indigo-800"> Serviços </li> <li class="flex items-start gap-3"> </li>
+                </ul>
+            </div>
+			
+			<!-- Aba Unidades -->
+            <div id="aba-2" class="tab-content">
+                    <h3 class="font-bold text-lg mb-4 text-indigo-800">Locais de Atendimento</h3>
+                    <div class="space-y-5 text-sm">
+                        <div class="bg-gray-50 p-4 rounded-2xl">
+                        <p class="font-semibold">💈 Amsterdã Rocha Barbearia ????????</p>
+                        <p class="text-gray-600">???????? à ???????? • ??:??-??:??</p>
+						<p class="text-gray-600">Endereço: ????????????????????????????????, Maceió - AL, ????????</p>
+                        <a href="tel:?????????" class="text-indigo-600">☎️ (??) ?????-????</a> /
+                        <a href="https://www.google.com/maps/dir/-9.637657,-35.726707/Amsterd%C3%A3+Rocha+Barbearia+24+Horas,+Av.+%C3%81lvaro+Otac%C3%ADlio,+4187+-+3+-+Ponta+Verde,+Macei%C3%B3+-+AL,+57035-180/@-9.6425263,-35.7348768,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x701452190bedba3:0xa5358e86d0071dcb!2m2!1d-35.700837!2d-9.64882?entry=ttu&g_ep=EgoyMDI2MDIyMi4wIKXMDSoASAFQAw%3D%3D" class="text-indigo-600">Rota</a>
+                    </div>
+                    
+					
+                </div>
+            </div>
+			
+
+            <!-- Aba Contato -->
+            <div id="aba-3" class="tab-content">
+                <div class="space-y-6 text-center py-4">
+                    <a href="tel:+5582993213091" class="flex items-center justify-center gap-4 p-5 bg-gray-150 hover:bg-gray-200 rounded-3xl transition">
+                        <span class="text-3xl">📞</span>
+                        <div class="text-left">
+                            <p class="font-bold text-lg text-indigo-800">+55 82 99321-3091</p>
+                            <p class="text-sm text-gray-600">Ligar ou WhatsApp principal</p>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/5582993213091?text=Ol%C3%A1%20Barbearia%20Amsterdã%20Rochaê,%20gostaria%20de%20agendar%20conosco"
+                       class="inline-block bg-gradient-to-r from-green-500 to-green-600 text-white font-bold text-lg px-12 py-5 rounded-3xl shadow-lg hover:scale-105 transition">
+                        CHAMAR NO WHATSAPP AGORA
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Contato</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-50 py-4 text-center text-xs text-gray-500 border-t">
+            Compartilhe com amigos e parentes
+        </div>
+    </div>
+
+    <script>
+        function abrirAba(n) {
+            document.querySelectorAll('.tab-content').forEach(aba => {
+                aba.classList.add('hidden');
+                aba.classList.remove('block');
+            });
+            document.getElementById('aba-' + n).classList.remove('hidden');
+            document.getElementById('aba-' + n).classList.add('block');
+
+            document.querySelectorAll('button').forEach(btn => {
+                btn.classList.remove('text-gray-500', 'border-b-2', 'border-gray-500');
+                btn.classList.add('text-gray-600');
+            });
+            document.getElementById('btn-' + n).classList.add('text-gray-500', 'border-b-2', 'border-gray-500');
+        }
+
+        window.onload = () => abrirAba(0);
+    </script>
+</body>
+</html>
